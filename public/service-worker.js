@@ -33,8 +33,8 @@ self.addEventListener("activate", (evt) => {
       );
     })
   );
-
-  self.clients.claim()
+  self.clients.claim();
+});
 
 self.addEventListener("fetch", function (evt) {
   if (evt.request.url.includes("/api/transaction")) {
